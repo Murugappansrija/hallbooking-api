@@ -217,8 +217,8 @@ nodeapp.post("/hallbookingapi/Createroom",(req,res)=>{
         res.status(500).send({message : "Internal Server Error",error})
     }
 })
-const port = 5110
+const port = 4000
 
-nodeapp.listen(port, "localhost",()=>{
+nodeapp.listen(port,()=>{
     console.log("server started at port ", port)
 })
